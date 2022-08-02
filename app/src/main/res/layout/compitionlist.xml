@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card2"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardBackgroundColor="#005A7570">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_id"
+        android:layout_width="332dp"
+        android:layout_height="133dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#454A5E"
+        app:cardBackgroundColor="#8193D3"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="94dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/textview"
+            android:textSize="12sp"
+            android:fontFamily="@font/g"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/endDate"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/abbr"
+            android:layout_width="226dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="68dp"
+            android:fontFamily="@font/g"
+            android:gravity="center|left"
+            android:text="@string/textview"
+            android:textColor="@color/white"
+
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="99dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="48dp"
+            android:gravity="center"
+            android:text="@string/textview"
+            android:fontFamily="@font/g"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textColorHighlight="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/nexa"
+            android:textColor="#D0FF00"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="@string/textview"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <Button
+            android:id="@+id/Cmatches"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="121dp"
+            android:text="Matches"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rounds"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startdate"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/rounds"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="12dp"
+            android:text="Rounds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/endDate"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

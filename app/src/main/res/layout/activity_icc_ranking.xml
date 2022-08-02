@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IccRankingActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="10dp"
+        android:text="ICC RANKINGS"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/batsman_icc_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/batsman_icc_id"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="BATSMAN"
+        android:textSize="9sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout_rankings"
+        app:layout_constraintEnd_toStartOf="@+id/all_rounder_id"
+        app:layout_constraintStart_toEndOf="@+id/teams_rank_id"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/bowler_icc_id"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="Bowler"
+        android:textSize="9sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout_rankings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/all_rounder_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/teams_rank_id"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="1dp"
+        android:text="TEAMS"
+        app:cornerRadius="15dp"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout_rankings"
+        app:layout_constraintEnd_toStartOf="@+id/batsman_icc_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all_rounder_id"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="ALL-ROUND"
+        android:textSize="9sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout_rankings"
+        app:layout_constraintEnd_toStartOf="@+id/bowler_icc_id"
+        app:layout_constraintStart_toEndOf="@+id/batsman_icc_id"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_rankings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batsman_icc_id">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/selector"
+            android:clickable="true"
+            app:itemRippleColor="#F32576AE"
+            app:itemTextColor="@drawable/selector"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

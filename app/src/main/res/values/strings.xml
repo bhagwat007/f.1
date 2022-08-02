@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Entity Sports</string>
+    <string name="textview">TextView</string>
+    <string name="abbr">TextView</string>
+    <string name="title">TextView</string>
+    <string name="startdate">TextView</string>
+    <string name="name">Name</string>
+    <string name="ab">TextView</string>
+    <string name="bd">TextView</string>
+    <string name="hd">TextView</string>
+    <string name="tt">TextView</string>
+    <string name="ttt">TextView</string>
+    <string name="tttt">TextView</string>
+    <string name="ttttt">TextView</string>
+    <string name="teama">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

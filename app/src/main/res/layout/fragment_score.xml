@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454A5E"
+    tools:context=".ScoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/btn2"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:fontFamily="@font/graphiklight"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/btn1"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="110dp"
+        android:clickable="true"
+        android:fontFamily="@font/graphiklight"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:fontFamily="@font/nexa"
+        android:textColor="#D0FF00"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreteamb"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/scoreteama"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="410dp"
+        android:layout_height="628dp"
+        android:layout_marginTop="170dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView2"
+            android:name="com.example.myapplication.scorecard"
+            android:layout_width="410dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</FrameLayout>

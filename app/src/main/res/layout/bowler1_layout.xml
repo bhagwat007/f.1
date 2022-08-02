@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#454A5E"
+    android:backgroundTint="#343743">
+
+    <TableRow
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/commentrybowlername"
+            android:layout_width="163dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="15dp"
+            android:text="TextView"
+            android:fontFamily="@font/nexa"
+            android:textColor="#FF9539"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/commentrybowlerruns"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/livebowlerovers"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/livebowlerwickets"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/livebowlereconmy"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:text="TextView"
+            android:textColor="@color/white" />
+    </TableRow>
+
+    <View
+        android:layout_width="335dp"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="35dp"
+        android:background="#F1EAED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

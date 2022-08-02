@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#454A5E"
+    android:backgroundTint="#343743">
+
+    <TableRow
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/batsmenname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/teama"
+            android:fontFamily="@font/nexa"
+            android:textColor="#FF9539"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/runs"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/balls"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/fours"
+            android:layout_width="21dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/sixex"
+            android:layout_width="21dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/strikerate"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/textview"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="35dp"
+        android:background="#F1EAED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#454A5E">
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bowlername"
+            android:layout_width="171dp"
+            android:layout_height="28dp"
+            android:fontFamily="@font/nexa"
+            android:textColor="#FF8C00"
+            android:text="TextView"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bowlerruns"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/bowlerovers"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/bowlermaiden"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/bowlerwickets"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/bowlereco"
+            android:layout_width="37dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/robot"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="335dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="#F1EAED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
